@@ -1,5 +1,7 @@
 const express = require('express');
+const helmet = require('helmet');
 const app = express();
+app.use(helmet());
 const bodyParser = require("body-parser");
 const MongoClient = require('mongodb').MongoClient;
 const ObjectID = require("mongodb").ObjectID;
